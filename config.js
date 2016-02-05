@@ -4,6 +4,7 @@
 
 var path = require('path'),
     websiteUrl = process.env.websiteUrl,
+    websiteUrlSsl = process.env.websiteUrlSsl,
     config;
 
 // Azure Feature
@@ -13,6 +14,10 @@ var path = require('path'),
 if (!websiteUrl || websiteUrl === '' ||  websiteUrl.length === 0) {
     websiteUrl = 'http://' + process.env.siteName + '.azurewebsites.net';
     console.log(websiteUrl);
+}
+if (!websiteUrlSsl || websiteUrlSsl === '' || websiteUrlSsl.length === 0) {
+    websiteUrlSsl = 'https://' + process.env.siteName + '.azurewebsites.net';
+    console.log(websiteUrlSsl);
 }
 
 config = {
@@ -49,7 +54,9 @@ config = {
         paths: {
             contentPath: path.join(__dirname, '/content/')
         },
-        forceAdminSSL: false
+
+        forceAdminSSL: true,
+        urlSSL: websiteUrlSsl
     },
 
     // ### Production
@@ -82,7 +89,8 @@ config = {
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
             port: process.env.PORT
         },
-        forceAdminSSL: true
+        forceAdminSSL: true,
+        urlSSL: websiteUrlSsl
     },
 
     // **Developers only need to edit below here**
