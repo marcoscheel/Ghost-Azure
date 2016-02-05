@@ -27,6 +27,7 @@
     "iojs": "~1.2.0"
   },
   "dependencies": {
+    "applicationinsights": "^0.15.8",
     "bcryptjs": "2.3.0",
     "bluebird": "2.10.2",
     "body-parser": "1.14.1",

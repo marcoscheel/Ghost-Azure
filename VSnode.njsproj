@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{72282930-b69d-4915-9cd4-57e6fbf7c8d6}</ProjectGuid>
+        <ProjectHome />
+        <ProjectView>ShowAllFiles</ProjectView>
+        <StartupFile>index.js</StartupFile>
+        <WorkingDirectory>.</WorkingDirectory>
+        <OutputPath>.</OutputPath>
+        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+    <ItemGroup>
+        <Content Include="azuredeploy.json" />
+        <Content Include="bower.json" />
+        <Content Include="npm-shrinkwrap.json" />
+        <Content Include="package.json" />
+        <Content Include="PRIVACY.md" />
+        <Content Include="README.md" />
+        <Compile Include="config.example.js" />
+        <Compile Include="config.js" />
+        <Compile Include="Gruntfile.js" />
+        <Compile Include="index.js" />
+        <Compile Include="core\index.js" />
+        <Content Include="docs\update.png" />
+        <Content Include="content\apps\README.md" />
+        <Content Include="content\data\README.md" />
+        <Content Include="content\images\README.md" />
+        <Content Include="content\themes\casper\package.json" />
+        <Content Include="content\themes\casper\README.md" />
+        <Content Include="content\themes\casper\assets\css\screen.css" />
+        <Content Include="content\themes\casper\assets\fonts\casper-icons.svg" />
+        <Compile Include="content\themes\casper\assets\js\index.js" />
+        <Compile Include="content\themes\casper\assets\js\jquery.fitvids.js" />
+        <Compile Include="core\server\filters.js" />
+        <Compile Include="core\server\ghost-server.js" />
+        <Compile Include="core\server\i18n.js" />
+        <Compile Include="core\server\index.js" />
+        <Compile Include="core\server\update-check.js" />
+        <Content Include="core\shared\private-robots.txt" />
+        <Content Include="core\shared\robots.txt" />
+        <Content Include="core\shared\favicon.ico" />
+        <Compile Include="core\shared\ghost-url.js" />
+        <Compile Include="core\shared\ghost-url.min.js" />
+        <Content Include="core\built\assets\ghost.css" />
+        <Content Include="core\built\assets\ghost.min.css" />
+        <Content Include="core\built\assets\vendor.css" />
+        <Content Include="core\built\assets\vendor.min.css" />
+        <Compile Include="core\built\assets\ghost.js" />
+        <Compile Include="core\built\assets\ghost.min.js" />
+        <Compile Include="core\built\assets\tests.js" />
+        <Compile Include="core\built\assets\vendor.js" />
+        <Compile Include="core\built\assets\vendor.min.js" />
+        <Content Include="core\built\assets\fonts\ghosticons.svg" />
+        <Content Include="core\built\assets\img\404-ghost.png" />
+        <Content Include="core\built\assets\img\404-ghost@2x.png" />
+        <Content Include="core\built\assets\img\ghost-logo.png" />
+        <Content Include="core\built\assets\img\install-welcome.png" />
+        <Content Include="core\built\assets\img\invite-placeholder.png" />
+        <Content Include="core\built\assets\img\large.png" />
+        <Content Include="core\built\assets\img\medium.png" />
+        <Content Include="core\built\assets\img\small.png" />
+        <Content Include="core\built\assets\img\touch-icon-ipad.png" />
+        <Content Include="core\built\assets\img\touch-icon-iphone.png" />
+        <Content Include="core\built\assets\img\users.png" />
+        <Content Include="core\built\assets\img\ghosticon.jpg" />
+        <Content Include="core\built\assets\img\loadingcat.gif" />
+        <Compile Include="core\server\api\authentication.js" />
+        <Compile Include="core\server\api\clients.js" />
+        <Compile Include="core\server\api\configuration.js" />
+        <Compile Include="core\server\api\db.js" />
+        <Compile Include="core\server\api\index.js" />
+        <Compile Include="core\server\api\mail.js" />
+        <Compile Include="core\server\api\notifications.js" />
+        <Compile Include="core\server\api\posts.js" />
+        <Compile Include="core\server\api\roles.js" />
+        <Compile Include="core\server\api\settings.js" />
+        <Compile Include="core\server\api\slugs.js" />
+        <Compile Include="core\server\api\tags.js" />
+        <Compile Include="core\server\api\themes.js" />
+        <Compile Include="core\server\api\upload.js" />
+        <Compile Include="core\server\api\users.js" />
+        <Compile Include="core\server\api\utils.js" />
+        <Compile Include="core\server\apps\dependencies.js" />
+        <Compile Include="core\server\apps\index.js" />
+        <Compile Include="core\server\apps\loader.js" />
+        <Compile Include="core\server\apps\permissions.js" />
+        <Compile Include="core\server\apps\proxy.js" />
+        <Compile Include="core\server\apps\sandbox.js" />
+        <Compile Include="core\server\config\index.js" />
+        <Compile Include="core\server\config\url.js" />
+        <Compile Include="core\server\controllers\admin.js" />
+        <Content Include="core\server\data\default-settings.json" />
+        <Compile Include="core\server\data\schema.js" />
+        <Compile Include="core\server\errors\bad-request-error.js" />
+        <Compile Include="core\server\errors\data-import-error.js" />
+        <Compile Include="core\server\errors\email-error.js" />
+        <Compile Include="core\server\errors\index.js" />
+        <Compile Include="core\server\errors\internal-server-error.js" />
+        <Compile Include="core\server\errors\method-not-allowed-error.js" />
+        <Compile Include="core\server\errors\no-permission-error.js" />
+        <Compile Include="core\server\errors\not-found-error.js" />
+        <Compile Include="core\server\errors\request-too-large-error.js" />
+        <Compile Include="core\server\errors\too-many-requests-error.js" />
+        <Compile Include="core\server\errors\unauthorized-error.js" />
+        <Compile Include="core\server\errors\unsupported-media-type-error.js" />
+        <Compile Include="core\server\errors\validation-error.js" />
+        <Compile Include="core\server\events\index.js" />
+        <Compile Include="core\server\helpers\asset.js" />
+        <Compile Include="core\server\helpers\author.js" />
+        <Compile Include="core\server\helpers\body_class.js" />
+        <Compile Include="core\server\helpers\content.js" />
+        <Compile Include="core\server\helpers\date.js" />
+        <Compile Include="core\server\helpers\encode.js" />
+        <Compile Include="core\server\helpers\excerpt.js" />
+        <Compile Include="core\server\helpers\foreach.js" />
+        <Compile Include="core\server\helpers\get.js" />
+        <Compile Include="core\server\helpers\ghost_foot.js" />
+        <Compile Include="core\server\helpers\ghost_head.js" />
+        <Compile Include="core\server\helpers\has.js" />
+        <Compile Include="core\server\helpers\image.js" />
+        <Compile Include="core\server\helpers\index.js" />
+        <Compile Include="core\server\helpers\input_password.js" />
+        <Compile Include="core\server\helpers\is.js" />
+        <Compile Include="core\server\helpers\meta_description.js" />
+        <Compile Include="core\server\helpers\meta_title.js" />
+        <Compile Include="core\server\helpers\navigation.js" />
+        <Compile Include="core\server\helpers\page_url.js" />
+        <Compile Include="core\server\helpers\pagination.js" />
+        <Compile Include="core\server\helpers\plural.js" />
+        <Compile Include="core\server\helpers\post_class.js" />
+        <Compile Include="core\server\helpers\prev_next.js" />
+        <Compile Include="core\server\helpers\tags.js" />
+        <Compile Include="core\server\helpers\template.js" />
+        <Compile Include="core\server\helpers\title.js" />
+        <Compile Include="core\server\helpers\url.js" />
+        <Compile Include="core\server\helpers\utils.js" />
+        <Compile Include="core\server\mail\index.js" />
+        <Compile Include="core\server\middleware\auth-strategies.js" />
+        <Compile Include="core\server\middleware\auth.js" />
+        <Compile Include="core\server\middleware\cache-control.js" />
+        <Compile Include="core\server\middleware\check-ssl.js" />
+        <Compile Include="core\server\middleware\decide-is-admin.js" />
+        <Compile Include="core\server\middleware\ghost-busboy.js" />
+        <Compile Include="core\server\middleware\index.js" />
+        <Compile Include="core\server\middleware\oauth.js" />
+        <Compile Include="core\server\middleware\private-blogging.js" />
+        <Compile Include="core\server\middleware\redirect-to-setup.js" />
+        <Compile Include="core\server\middleware\serve-shared-file.js" />
+        <Compile Include="core\server\middleware\spam-prevention.js" />
+        <Compile Include="core\server\middleware\static-theme.js" />
+        <Compile Include="core\server\middleware\theme-handler.js" />
+        <Compile Include="core\server\middleware\uncapitalise.js" />
+        <Compile Include="core\server\models\accesstoken.js" />
+        <Compile Include="core\server\models\app-field.js" />
+        <Compile Include="core\server\models\app-setting.js" />
+        <Compile Include="core\server\models\app.js" />
+        <Compile Include="core\server\models\client-trusted-domain.js" />
+        <Compile Include="core\server\models\client.js" />
+        <Compile Include="core\server\models\index.js" />
+        <Compile Include="core\server\models\permission.js" />
+        <Compile Include="core\server\models\post.js" />
+        <Compile Include="core\server\models\refreshtoken.js" />
+        <Compile Include="core\server\models\role.js" />
+        <Compile Include="core\server\models\settings.js" />
+        <Compile Include="core\server\models\tag.js" />
+        <Compile Include="core\server\models\user.js" />
+        <Compile Include="core\server\permissions\effective.js" />
+        <Compile Include="core\server\permissions\index.js" />
+        <Compile Include="core\server\routes\admin.js" />
+        <Compile Include="core\server\routes\api.js" />
+        <Compile Include="core\server\routes\frontend.js" />
+        <Compile Include="core\server\routes\index.js" />
+        <Compile Include="core\server\storage\base.js" />
+        <Compile Include="core\server\storage\index.js" />
+        <Compile Include="core\server\storage\local-file-store.js" />
+        <Content Include="core\server\translations\en.json" />
+        <Compile Include="core\server\utils\downzero.js" />
+        <Compile Include="core\server\utils\index.js" />
+        <Compile Include="core\server\utils\labs.js" />
+        <Compile Include="core\server\utils\parse-package-json.js" />
+        <Compile Include="core\server\utils\pipeline.js" />
+        <Compile Include="core\server\utils\read-directory.js" />
+        <Compile Include="core\server\utils\read-themes.js" />
+        <Compile Include="core\server\utils\sequence.js" />
+        <Compile Include="core\server\utils\startup-check.js" />
+        <Compile Include="core\server\utils\validate-themes.js" />
+        <Compile Include="core\server\controllers\frontend\channel-config.js" />
+        <Compile Include="core\server\controllers\frontend\context.js" />
+        <Compile Include="core\server\controllers\frontend\error.js" />
+        <Compile Include="core\server\controllers\frontend\fetch-data.js" />
+        <Compile Include="core\server\controllers\frontend\format-response.js" />
+        <Compile Include="core\server\controllers\frontend\index.js" />
+        <Compile Include="core\server\controllers\frontend\secure.js" />
+        <Compile Include="core\server\controllers\frontend\templates.js" />
+        <Compile Include="core\server\data\export\index.js" />
+        <Content Include="core\server\data\fixtures\fixtures.json" />
+        <Compile Include="core\server\data\fixtures\index.js" />
+        <Compile Include="core\server\data\import\data-importer.js" />
+        <Compile Include="core\server\data\import\index.js" />
+        <Compile Include="core\server\data\import\utils.js" />
+        <Compile Include="core\server\data\importer\index.js" />
+        <Compile Include="core\server\data\migration\commands.js" />
+        <Compile Include="core\server\data\migration\index.js" />
+        <Compile Include="core\server\data\utils\index.js" />
+        <Compile Include="core\server\data\validation\index.js" />
+        <Compile Include="core\server\data\versioning\index.js" />
+        <Compile Include="core\server\data\xml\xmlrpc.js" />
+        <Content Include="core\server\data\fixtures\permissions\permissions.json" />
+        <Compile Include="core\server\data\fixtures\permissions\index.js" />
+        <Compile Include="core\server\data\importer\handlers\image.js" />
+        <Compile Include="core\server\data\importer\handlers\json.js" />
+        <Compile Include="core\server\data\importer\handlers\markdown.js" />
+        <Compile Include="core\server\data\importer\importers\data.js" />
+        <Compile Include="core\server\data\importer\importers\image.js" />
+        <Compile Include="core\server\data\utils\clients\index.js" />
+        <Compile Include="core\server\data\utils\clients\mysql.js" />
+        <Compile Include="core\server\data\utils\clients\pg.js" />
+        <Compile Include="core\server\data\utils\clients\sqlite3.js" />
+        <Compile Include="core\server\data\xml\rss\index.js" />
+        <Compile Include="core\server\data\xml\sitemap\base-generator.js" />
+        <Compile Include="core\server\data\xml\sitemap\handler.js" />
+        <Compile Include="core\server\data\xml\sitemap\index-generator.js" />
+        <Compile Include="core\server\data\xml\sitemap\index.js" />
+        <Compile Include="core\server\data\xml\sitemap\manager.js" />
+        <Compile Include="core\server\data\xml\sitemap\page-generator.js" />
+        <Compile Include="core\server\data\xml\sitemap\post-generator.js" />
+        <Compile Include="core\server\data\xml\sitemap\tag-generator.js" />
+        <Compile Include="core\server\data\xml\sitemap\user-generator.js" />
+        <Compile Include="core\server\data\xml\sitemap\utils.js" />
+        <Content Include="core\server\mail\templates\invite-user.html" />
+        <Content Include="core\server\mail\templates\reset-password.html" />
+        <Content Include="core\server\mail\templates\test.html" />
+        <Content Include="core\server\mail\templates\welcome.html" />
+        <Content Include="core\server\mail\templates\raw\invite-user.html" />
+        <Content Include="core\server\mail\templates\raw\reset-password.html" />
+        <Content Include="core\server\mail\templates\raw\test.html" />
+        <Content Include="core\server\mail\templates\raw\welcome.html" />
+        <Compile Include="core\server\models\base\index.js" />
+        <Compile Include="core\server\models\base\token.js" />
+        <Compile Include="core\server\models\base\utils.js" />
+        <Compile Include="core\server\models\plugins\access-rules.js" />
+        <Compile Include="core\server\models\plugins\filter.js" />
+        <Compile Include="core\server\models\plugins\include-count.js" />
+        <Compile Include="core\server\models\plugins\index.js" />
+        <Compile Include="core\server\models\plugins\pagination.js" />
+        <Content Include="core\shared\img\user-cover.png" />
+        <Content Include="core\shared\img\user-image.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="content" />
+        <Folder Include="content\apps" />
+        <Folder Include="content\data" />
+        <Folder Include="content\images" />
+        <Folder Include="content\themes" />
+        <Folder Include="content\themes\casper" />
+        <Folder Include="content\themes\casper\assets" />
+        <Folder Include="content\themes\casper\assets\css" />
+        <Folder Include="content\themes\casper\assets\fonts" />
+        <Folder Include="content\themes\casper\assets\js" />
+        <Folder Include="content\themes\casper\partials" />
+        <Folder Include="core" />
+        <Folder Include="core\built" />
+        <Folder Include="core\built\assets" />
+        <Folder Include="core\built\assets\fonts" />
+        <Folder Include="core\built\assets\img" />
+        <Folder Include="core\built\assets\img\contributors" />
+        <Folder Include="core\server" />
+        <Folder Include="core\server\api" />
+        <Folder Include="core\server\apps" />
+        <Folder Include="core\server\config" />
+        <Folder Include="core\server\controllers" />
+        <Folder Include="core\server\controllers\frontend" />
+        <Folder Include="core\server\data" />
+        <Folder Include="core\server\data\export" />
+        <Folder Include="core\server\data\fixtures" />
+        <Folder Include="core\server\data\fixtures\permissions" />
+        <Folder Include="core\server\data\import" />
+        <Folder Include="core\server\data\importer" />
+        <Folder Include="core\server\data\importer\handlers" />
+        <Folder Include="core\server\data\importer\importers" />
+        <Folder Include="core\server\data\migration" />
+        <Folder Include="core\server\data\utils" />
+        <Folder Include="core\server\data\utils\clients" />
+        <Folder Include="core\server\data\validation" />
+        <Folder Include="core\server\data\versioning" />
+        <Folder Include="core\server\data\xml" />
+        <Folder Include="core\server\data\xml\rss" />
+        <Folder Include="core\server\data\xml\sitemap" />
+        <Folder Include="core\server\errors" />
+        <Folder Include="core\server\events" />
+        <Folder Include="core\server\helpers" />
+        <Folder Include="core\server\helpers\tpl" />
+        <Folder Include="core\server\mail" />
+        <Folder Include="core\server\mail\templates" />
+        <Folder Include="core\server\mail\templates\raw" />
+        <Folder Include="core\server\middleware" />
+        <Folder Include="core\server\models" />
+        <Folder Include="core\server\models\base" />
+        <Folder Include="core\server\models\plugins" />
+        <Folder Include="core\server\permissions" />
+        <Folder Include="core\server\routes" />
+        <Folder Include="core\server\storage" />
+        <Folder Include="core\server\translations" />
+        <Folder Include="core\server\utils" />
+        <Folder Include="core\server\views" />
+        <Folder Include="core\shared" />
+        <Folder Include="core\shared\img" />
+        <Folder Include="docs" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+    <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+    <ProjectExtensions>
+        <VisualStudio>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+            <WebProjectProperties>
+              <UseIIS>False</UseIIS>
+              <AutoAssignPort>True</AutoAssignPort>
+              <DevelopmentServerPort>0</DevelopmentServerPort>
+              <DevelopmentServerVPath>/</DevelopmentServerVPath>
+              <IISUrl>http://localhost:48022/</IISUrl>
+              <NTLMAuthentication>False</NTLMAuthentication>
+              <UseCustomServer>True</UseCustomServer>
+              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+            </WebProjectProperties>
+          </FlavorProperties>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+            <WebProjectProperties>
+              <StartPageUrl>
+              </StartPageUrl>
+              <StartAction>CurrentPage</StartAction>
+              <AspNetDebugging>True</AspNetDebugging>
+              <SilverlightDebugging>False</SilverlightDebugging>
+              <NativeDebugging>False</NativeDebugging>
+              <SQLDebugging>False</SQLDebugging>
+              <ExternalProgram>
+              </ExternalProgram>
+              <StartExternalURL>
+              </StartExternalURL>
+              <StartCmdLineArguments>
+              </StartCmdLineArguments>
+              <StartWorkingDirectory>
+              </StartWorkingDirectory>
+              <EnableENC>False</EnableENC>
+              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+            </WebProjectProperties>
+          </FlavorProperties>
+        </VisualStudio>
+    </ProjectExtensions>
+</Project>
