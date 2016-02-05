@@ -1,0 +1,2 @@
+D:\Code\Repos\Ghost-Azure\obj\Debug\VSnode.njsprojResolveAssemblyReference.cache
+D:\Code\Repos\Ghost-Azure\bin\Microsoft.NodejsTools.WebRole.dll

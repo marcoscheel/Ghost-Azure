@@ -2,7 +2,8 @@
 // Orchestrates the startup of Ghost when run from command line.
 var express,
     ghost,
-    parentApp,
+	parentApp,
+	appInsights,
     errors;
 
 // Make sure dependencies are installed and file system permissions are correct.
