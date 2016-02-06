@@ -19,8 +19,9 @@ errors = require('./core/server/errors');
 // If the App Setting 'websiteUrl' is set, Ghost will use that URL as base.
 // If it isn't set, we'll go with the default sitename.
 var instrumentationKey = process.env.instrumentationKey;
-if (!instrumentationKey || instrumentationKey === '' || instrumentationKey.length === 0) {
-	appInsights = require("applicationinsights");
+if (instrumentationKey || instrumentationKey != '' || instrumentationKey.length > 0) {
+    appInsights = require("applicationinsights");
+	console.log('instrumentationKey');
 	console.log(instrumentationKey);
 	appInsights.setup(instrumentationKey).start();
 }
